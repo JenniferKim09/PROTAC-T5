@@ -1,11 +1,11 @@
 The code provided here is for the  **PROTAC-T5: Electron Cloud Representation Guided Proteolysis Targeting Chimera (PROTAC) Design with Multimodal Contrastive Learning and the Large Language Model** paper. First of all, prepare the environment:
 
-- ```
+```
 git clone https://github.com/JenniferKim09/PROTAC-T5.git
 cd PROTAC-T5
 conda env create -f environment.yml -n protac-t5
 conda activate protac-t5
-  ```
+```
 
 ## 1a. Direct download of data and ckpt
 
@@ -15,9 +15,9 @@ Datasets used for the training of the model (put under `./data`) and the trained
 ## 1b. Manual preparation of the datasets
 If you want to try the data preparation for your own data, use the code as:
 
-- ```
+```
 python lig2ecloud.py 
-  ```
+```
 
 The `.csv` file and `.sdf` of your data should be previously prepared and the path mentioned in `lig2ecloud.py` should be changed to your path. Users can refer to the examples `./data/PROTAC.csv` and `./data/PROTAC.sdf`. 
 
@@ -26,18 +26,18 @@ The `.csv` file and `.sdf` of your data should be previously prepared and the pa
 
 * After the preparation of the datasets, the training can be performed by:
 
-- ```
+```
 python train.py 
-  ```
+```
 
 
 ## 3. Generation
 
 * Generate the linkers with the trained checkpoint:
 
-- ```
+```
 python generate.py 
-  ```
+```
  
 
 ## 4. Combine the linkers with the fragments
