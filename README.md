@@ -1,4 +1,6 @@
-The code provided here is for the  **PROTAC-T5: Electron Cloud Representation Guided Proteolysis Targeting Chimera (PROTAC) Design with Multimodal Contrastive Learning and the Large Language Model** paper. First of all, prepare the environment:
+The code provided here is for the  **PROTAC-T5: Electron Cloud Representation Guided Proteolysis Targeting Chimera (PROTAC) Design with Multimodal Contrastive Learning and the Large Language Model** paper. 
+
+First of all, prepare the environment:
 
 ```
 git clone https://github.com/JenniferKim09/PROTAC-T5.git
@@ -6,6 +8,8 @@ cd PROTAC-T5
 conda env create -f environment.yml -n protac-t5
 conda activate protac-t5
 ```
+
+Due to memory constraints, xtb-bleed.zip should be downloaded [here](https://doi.org/10.5281/zenodo.20321285), unzip and put under `./src/ecloud_utils`. 
 
 ## 1a. Direct download of data and ckpt
 
